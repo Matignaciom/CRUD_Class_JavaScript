@@ -19,7 +19,7 @@ Puedes eliminar un elemento de la colección utilizando el método `CRUD.delete(
 ## Uso Ejemplificado
 
 ```javascript
-// Crear una instancia de la clase CRUD
+// Uso de la clase CRUD
 const miCrud = new CRUD();
 
 // Definir una clase de modelo para los elementos
@@ -30,21 +30,21 @@ class Item {
     }
 }
 
-// Agregar elementos a la colección
-CRUD.create(miCrud, new Item(1, 'Ejemplo 1'));
-CRUD.create(miCrud, new Item(2, 'Ejemplo 2'));
+// Agregar elementos
+miCrud.create(new Item(1, 'Ejemplo 1'));
+miCrud.create(new Item(2, 'Ejemplo 2'));
 
-// Obtener todos los elementos de la colección
-console.log(CRUD.read(miCrud));
+// Obtener todos los elementos
+console.log(miCrud.read());
 
-// Actualizar un elemento en la colección
-CRUD.update(miCrud, 1, new Item(1, 'Nuevo Ejemplo 1'));
+// Actualizar un elemento
+miCrud.update(1, new Item(1, 'Nuevo Ejemplo 1'));
 
-// Eliminar un elemento de la colección
-CRUD.delete(miCrud, 2);
+// Eliminar un elemento
+miCrud.delete(2);
 
-// Obtener todos los elementos de la colección después de la actualización y eliminación
-console.log(CRUD.read(miCrud));
+// Obtener todos los elementos después de la actualización y eliminación
+console.log(miCrud.read());
 ```
 
 Este proyecto es una implementación básica de una clase CRUD en JavaScript que puede servir como punto de partida.
