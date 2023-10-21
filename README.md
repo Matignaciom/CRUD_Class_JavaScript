@@ -49,6 +49,6 @@ console.log(miCrud.read());
 
 Este proyecto es una implementación básica de una clase CRUD en JavaScript que puede servir como punto de partida.
 
-## No olvides dar las gracias
+## Agradecimientos
 
 Hecho con ❤️ por Matias Ignacio - https://github.com/Matignaciom
